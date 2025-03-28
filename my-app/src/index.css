@@ -1,13 +1,202 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+.about, .packages, .contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem;
+  background: url('C:\Users\fwang\OneDrive\Desktop\ELIPER TOURS AND TRAVEL\my-app\public\WEBI2.jpg') no-repeat center/cover;
+  color: rgb(18, 13, 13);
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+}
+
+.hero-section button {
+  padding: 1rem 2rem;
+  background: #f4a261;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 1rem;
+}
+
+.hero-section button:hover {
+  background: #e76f51;
+}
+
+.package-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.package {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.package button {
+  padding: 0.5rem 1rem;
+  background: #f4a261;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.package button:hover {
+  background: #e76f51;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 0.5rem;
+  background: #f4a261;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #e76f51;
+}
+/* Cab Booking Section */
+.cab-booking {
+  text-align: center;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.cab-booking h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.cab-booking p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Form */
+.cab-booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Inputs and Select */
+.cab-booking input,
+.cab-booking select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  outline: none;
+  transition: 0.3s;
+}
+
+.cab-booking input:focus,
+.cab-booking select:focus {
+  border-color: #fbb034;
+  box-shadow: 0 0 5px rgba(251, 176, 52, 0.5);
+}
+
+/* Checkbox */
+.cab-booking .checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.cab-booking .checkbox input {
+  accent-color: #fbb034;
+  cursor: pointer;
+}
+
+/* Book Now Button */
+.cab-booking button {
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #fbb034, #ffdd00);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cab-booking button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .cab-booking {
+    width: 95%;
+  }
 }
